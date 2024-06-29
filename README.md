@@ -1,5 +1,4 @@
 # Neural-Network-Dynamics-Analyzer
-# Neural Network Dynamics Analyzer
 
 ## Overview
 Neural Network Dynamics Analyzer is a MATLAB-based project designed to explore and analyze the dynamics of neural network models across various datasets. This project aims to provide tools to manipulate and visualize data from neural networks, assess performance, and optimize parameters for better model accuracy and efficiency.
