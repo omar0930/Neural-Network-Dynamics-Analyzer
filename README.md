@@ -1,28 +1,44 @@
-# Neural-Network-Dynamics-Analyzer
+# Neural Network Dynamics Analyzer
 
 ## Overview
-Neural Network Dynamics Analyzer is a MATLAB-based project designed to explore and analyze the dynamics of neural network models across various datasets. This project aims to provide tools to manipulate and visualize data from neural networks, assess performance, and optimize parameters for better model accuracy and efficiency.
+The **Neural Network Dynamics Analyzer** is a tool designed to analyze the internal behavior of neural networks. It provides insights into weight updates, activation patterns, and gradient flow during training.
 
-## Key Features
-- **Data Handling**: Includes scripts to load and process data from Excel spreadsheets.
-- **Neural Network Training**: Utilizes MATLAB's neural network toolbox for training models on processed data.
-- **Model Optimization**: Scripts for fine-tuning network parameters to enhance performance.
-- **Visualization**: Tools to visualize training results and model performance metrics.
+## Features
+- Tracks weight changes over epochs
+- Visualizes neuron activations
+- Analyzes gradient distributions
+- Supports multiple neural network architectures
+- Customizable visualization options
 
-## Files and Directories
-- `rb.m`, `newgrrl.m`, `ff.m` - MATLAB scripts for different stages of the neural network processing.
-- `net_new_rb.mat`, `net_neww_grne.mat`, `net_new_ff.mat` - MATLAB data files containing trained models.
-- `transpozedds4444.xlsx`, `G-2 Dataset.xlsx`, `test.xlsx`, `transpozedd.xlsx` - Excel datasets used for training and testing the neural networks.
+## Installation
+Clone the repository using:
+```bash
+git clone https://github.com/omar0930/Neural-Network-Dynamics-Analyzer.git
+cd Neural-Network-Dynamics-Analyzer
+```
 
-## Getting Started
-To run this project, you will need MATLAB installed on your machine, along with the Neural Network Toolbox.
+## Dataset
+The tool is model-agnostic and can be used with any dataset. Users can specify their own datasets for training and analysis.
 
-### Setup
-1. Clone this repository to your local machine.
-2. Open MATLAB and navigate to the project directory.
-3. Run the scripts in the order specified in the project documentation to process data and train the models.
+## Workflow
+1. Load and train a neural network model.
+2. Monitor weight updates and gradient flow.
+3. Visualize neuron activations across layers.
+4. Analyze performance metrics over training epochs.
+5. Fine-tune hyperparameters based on insights.
 
-### Usage
-To start training a model with a specific dataset:
-```matlab
-run('rb.m')  % Example script to load and process data
+## Results
+The tool provides detailed visualizations, including:
+- **Weight change maps**: Displaying how weights evolve over training.
+- **Activation heatmaps**: Showing neuron activity for different layers.
+- **Gradient distribution plots**: Helping detect vanishing or exploding gradients.
+- **Training performance graphs**: Tracking loss and accuracy trends.
+
+These insights help optimize neural network performance and improve training stability.
+
+## Technologies Used
+- Python
+- TensorFlow/Keras
+- PyTorch
+- Matplotlib & Seaborn (for visualization)
+- NumPy & Pandas
